@@ -3,16 +3,16 @@
 This README describes the configuration settings for a Jenkins pipeline to ensure continuous integration (CI) for a project hosted on GitLab or GitHub. This pipeline is designed to validate build stability and monitor changes in the source repository.This pipeline is configured to automatically trigger builds based on changes in a GitLab or GitHub repository. It provides options to handle concurrency, manage credentials, and specify build triggers. Additionally, the pipeline setup allows for speed/durability optimization and stash preservation between builds.
 
 ## Prerequisites
-**Jenkins:**Ensure that Jenkins is installed and accessible.
+   Jenkins:Ensure that Jenkins is installed and accessible.                             
 **GitLab/GitHub Access:** API tokens for GitLab and GitHub are required for connection and triggering builds.
 **GitLab and GitHub Webhooks:** Set up webhooks in the respective repositories to notify Jenkins of any changes.
 
 ### Pipeline Configuration
 ### General Settings
-Discard Old Builds: Enable to automatically discard older builds and free up storage.
-Concurrency Management:
-Do not allow concurrent builds: Ensures only one build is active at a time.
-Do not allow the pipeline to resume if the controller restarts: Stops builds from resuming post-restart.
+1. Discard Old Builds: Enable to automatically discard older builds and free up storage.
+2. Concurrency Management:
+    Do not allow concurrent builds: Ensures only one build is active at a time.
+    Do not allow the pipeline to resume if the controller restarts: Stops builds from resuming post-restart.
 
 
 #### GitHub and GitLab Connections
